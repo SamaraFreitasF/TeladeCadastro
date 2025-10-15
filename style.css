@@ -1,0 +1,112 @@
+
+      /* Reset básico para consistência */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f5f5f5; /* Cinza claro para fundo */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #333; /* Cinza escuro para texto principal */
+      }
+
+      .container {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+      }
+
+      .card {
+        background-color: white; /* Branco para o card */
+        padding: 20px;
+        border-radius: 12px; /* Bordas arredondadas para um look moderno */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
+        text-align: center;
+        transition: transform 0.3s ease; /* Transição para hover */
+      }
+
+      .card:hover {
+        transform: translateY(-5px); /* Efeito de leve elevação ao hover */
+      }
+
+      h2 {
+        color: #000000; /* Preto para títulos */
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      .input-group {
+        margin-bottom: 15px;
+        text-align: left;
+      }
+
+      .input-group label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333; /* Cinza escuro para labels */
+        font-weight: 600;
+      }
+
+      .input-group input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc; /* Cinza claro para bordas */
+        border-radius: 6px;
+        font-size: 16px;
+        background-color: #f9f9f9; /* Cinza muito claro para fundo de inputs */
+        transition: border-color 0.3s, box-shadow 0.3s;
+      }
+
+      .input-group input:focus {
+        border-color: #4CAF50; /* Verde para foco */
+        outline: none;
+        box-shadow: 0 0 8px rgba(76, 175, 80, 0.2); /* Sombra verde suave */
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #10B77F; /* Verde para botão */
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s, transform 0.3s;
+        margin-top: 10px;
+      }
+
+      button:hover {
+        background-color: #45a049; /* Verde mais escuro para hover */
+        transform: scale(1.02); /* Efeito de crescimento leve */
+      }
+
+      #div_mensagem {
+        margin-top: 15px;
+        font-weight: 600;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+      }
+
+      /* Estilos para mensagens de erro/sucesso */
+      #div_mensagem span {
+        display: block;
+      }
+
+      /* Responsividade para telas menores */
+      @media (max-width: 480px) {
+        .container {
+          padding: 10px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+    }
